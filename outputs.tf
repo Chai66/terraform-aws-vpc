@@ -5,3 +5,7 @@ output "azs" {  # Output is nothing but will give output to end user wht you gov
 output "vpc_id" {
   value = aws_vpc.main.id
 }
+
+output "public_subnets_ids" {
+  
+}
