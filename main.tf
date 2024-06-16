@@ -67,6 +67,16 @@ resource "aws_subnet" "database" {
     }
     )
 }
+# Creating databse subnet group
+resource "aws_db_subnet_group" "default" {
+  name       = "${local.name}"
+  subnet_ids = aws_subnet.database[*].id
+
+  tags = {
+    Name = "${local.name}"
+  }
+}
+
 # Creating elastic IP terraform
 
 resource "aws_eip" "eip" {
