@@ -44,3 +44,6 @@ This Module Creates following resources. We are using HA, we are getting first 2
 * vpc_id - VPC ID created
 *
 
+# Ctrl+shft+v for preview
+
+
